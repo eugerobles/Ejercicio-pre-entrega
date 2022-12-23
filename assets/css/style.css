@@ -1,0 +1,193 @@
+/*para todas la paginas*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.nombredelhotel {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 1%;
+}
+.navbar-expand-lg bg-light {
+    width: 100%;
+    height: 50px;
+     background-color: rgb(252, 204, 117);
+     position: sticky;
+     top: 0;
+     display: inline-block
+}
+.subtitulo {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    margin: 2cm;
+}
+
+
+/*inicio*/
+
+h1 {font-style: italic;
+    font-weight: 200;
+    margin: 10px;
+    font-size: 45px;
+    font-family: Georgia, 'Times New Roman', Times, serif;      
+    text-align: center;
+
+}
+
+.parrafo {width: 400px;
+   margin: 10px;
+}
+.reservaciones {
+    height: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    background-color: bisque;
+    margin: 50px;
+}
+/*termina el inicio*/
+
+/*habitaciones*/
+.habitaciones {
+    width: 250px;
+}
+.habitaciones2 {
+    width: 250px;
+}
+
+.habitaciondoble { 
+    transition: transform 1s;
+    width: 200%;
+    margin: 5%;
+}
+.habitaciontriple {
+    width: 200%;
+    margin: 5%;
+}
+
+.habitacionletra {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 10px;
+   font-size: larger;
+}
+
+
+/*servicios*/
+.imagendesayuno {
+   width: 100%;
+   height: 500px;
+}
+.desayunodescripcion {
+    margin: 50px;
+}
+
+/*ushuaia*/
+.header2 {
+    width: 99%;
+    height: 500px;
+    padding: 5px;
+    background-image: url(../img/header2.jpg);
+    background-size: cover;
+    margin: 1%;
+}
+
+.interes {
+    text-align: center;
+    font-size: larger;
+    margin: 100px;
+    background-color: cadetblue;
+}
+
+.lugares {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    justify-content: space-evenly;
+    row-gap: 5px
+    ;
+
+}
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 250px;
+    margin: 10 px ;
+    padding: 10px;
+    flex-direction: row; /*o viene por defecto en fila */
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    column-gap: 10px;
+    row-gap: 5pxpx;
+    align-items: baseline;
+    
+}
+
+.add {
+    position: relative;
+}
+
+.add h4 {
+    position: absolute;
+    bottom: 0;
+    padding: 10 px;
+    text-align: center;
+    color: white;
+}
+
+
+/* contacto */ 
+.formulario {
+    width: 600px;
+    margin: 20px auto;
+    
+}
+
+
+  /*footer*/
+footer{
+    background-color: darkkhaki;
+    color: white;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer > .compania{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer > .sucursales {
+    display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+@media(max-width:1223px){
+    footer > .sucursales {
+        width: 100%;
+       
+    }
+}
+footer > .sucursales > .sucursal{
+    margin: 20px;
+}
+footer > .sucursales > .sucursal > h3 {
+    margin: 10px 0px;
+}
+footer > .sucursales > .sucursal > ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+footer > .sucursales > .sucursal > ul >li > a > i {
+ margin-right: 10px;
+}
+/*fin del fotter*/
