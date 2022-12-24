@@ -38,11 +38,13 @@ h1 {font-style: italic;
 .carousel img {
     height: 500px;
     width: 100%;
-    
 }
 
-.parrafo {width: 400px;
+.parrafo {
+    width: 400px;
    margin: 50px;
+   text-align:left;
+   font-size: medium;
 }
 .presentacion{
     margin: 15px;
@@ -56,6 +58,7 @@ h1 {font-style: italic;
     background-color: rgb(252, 203, 113);
 }
 
+
    
 .reservaciones h3 {
     margin: 30px;
@@ -68,8 +71,9 @@ h1 {font-style: italic;
     border-color: white;
 }
 .tarjetas{
-    margin: 10px;
+    margin: 50px;
     padding: 10px;
+    margin-top: 150px;
 }
 
 .tarjetas img {
@@ -156,7 +160,10 @@ h1 {font-style: italic;
 .formulario {
     width: 600px;
     margin: 20px auto;
-    
+}
+.mapa{
+    width: auto;
+    margin: 20px auto;
 }
 
 
@@ -166,7 +173,6 @@ footer{
     padding: 10px;
     color: white;
     height: 250px;
-    flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -184,11 +190,7 @@ footer{
  background-color: white;
  margin-top: 5px;
  border: none;
- 
-
-}
-
-
+ }
 
 @media(max-width:1223px){
     footer > .sucursales {
