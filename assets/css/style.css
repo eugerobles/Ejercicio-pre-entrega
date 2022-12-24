@@ -13,10 +13,10 @@
 .navbar-expand-lg bg-light {
     width: 100%;
     height: 50px;
-     background-color: rgb(252, 204, 117);
-     position: sticky;
-     top: 0;
-     display: inline-block
+    background-color: rgb(252, 204, 117);
+    position: sticky;
+    top: 0;
+    display: inline-block
 }
 .subtitulo {
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -35,16 +35,47 @@ h1 {font-style: italic;
     text-align: center;
 
 }
+.carousel img {
+    height: 500px;
+    width: 100%;
+    
+}
 
 .parrafo {width: 400px;
-   margin: 10px;
+   margin: 50px;
+}
+.presentacion{
+    margin: 15px;
+    vertical-align: baseline;
+}
+.presentacion h2{
+    margin-top: 60px;
 }
 .reservaciones {
+    width:100%;
+    background-color: rgb(252, 203, 113);
+}
+
+   
+.reservaciones h3 {
+    margin: 30px;
+    justify-items: center;
+}
+.reservaciones button{
+    margin:  30px;
+    height: 10 px;
+    background-color:rgb(238, 160, 15);
+    border-color: white;
+}
+.tarjetas{
+    margin: 10px;
+    padding: 10px;
+}
+
+.tarjetas img {
+    width: 50px;
     height: 50px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    text-align: center;
-    background-color: bisque;
-    margin: 50px;
+    align-items: center;
 }
 /*termina el inicio*/
 
@@ -99,34 +130,15 @@ h1 {font-style: italic;
     background-color: cadetblue;
 }
 
-.lugares {
+.tarjetas{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
     align-items: stretch;
     justify-content: space-evenly;
-    row-gap: 5px
-    ;
-
 }
-.card {
-    display: flex;
-    flex-wrap: wrap;
-    width: 250px;
-    margin: 10 px ;
-    padding: 10px;
-    flex-direction: row; /*o viene por defecto en fila */
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: stretch;
-    justify-content: flex-end;
-    column-gap: 10px;
-    row-gap: 5pxpx;
-    align-items: baseline;
     
-}
-
 .add {
     position: relative;
 }
@@ -150,44 +162,38 @@ h1 {font-style: italic;
 
   /*footer*/
 footer{
-    background-color: darkkhaki;
+    background-color: rgb(180, 174, 91);
+    padding: 10px;
     color: white;
+    height: 250px;
     flex-wrap: wrap;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-footer > .compania{
-    margin: 20px;
-    display: flex;
+.newfooter{
+    margin: 10px;
+    border-radius: 5px;
     flex-direction: column;
-    gap: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    flex-direction: column;
 }
-footer > .sucursales {
-    display: flex;
-    width: 50%;
-    flex-wrap: wrap;
-    justify-content: space-around;
+
+.newfooter button {
+ background-color: white;
+ margin-top: 5px;
+ border: none;
+ 
+
 }
+
+
+
 @media(max-width:1223px){
     footer > .sucursales {
-        width: 100%;
-       
+        width: 100%; 
     }
 }
-footer > .sucursales > .sucursal{
-    margin: 20px;
-}
-footer > .sucursales > .sucursal > h3 {
-    margin: 10px 0px;
-}
-footer > .sucursales > .sucursal > ul {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-}
-footer > .sucursales > .sucursal > ul >li > a > i {
- margin-right: 10px;
-}
+
 /*fin del fotter*/
