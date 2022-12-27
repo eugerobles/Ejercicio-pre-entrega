@@ -6,25 +6,33 @@
 
 }
 
-.header{
+header{
     display: flex;
     background-color: white;
 }
-.header img{
+header img{
     height: 70px;
 }
-.header h1{
+header h1{
     justify-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-    
+
 
 }
 
 .body{
     background-color: rgb(250, 246, 246);
 }
-
+.subtitulo{
+    display: flex;
+    justify-content: center;
+    background-color:rgb(219, 230, 240);
+    height: 60px;
+}
+.navbar{
+    background-image: linear-gradient(0deg, grey, white);
+}
 /*inicio*/
 
 h1 {font-style: italic;
@@ -49,19 +57,21 @@ h1 {font-style: italic;
 }
 .reservaciones{
     margin-top: 200px;
-    background-color:rgb(238, 160, 15);
+   background-image:linear-gradient(0deg, orange, rgb(243, 214, 159))
 }
 .reservaciones h3 {
     padding: 25px;
     height: 50px;
     display: flex;
     justify-content: center;
+    color: black;
 
 }
 .reservaciones button{
     margin:  30px;
     height: 10 px;
     border-color: white;
+    background-color: rgb(238, 160, 15);
     
 }
 .card{
@@ -73,6 +83,11 @@ h1 {font-style: italic;
     justify-content: center;
 }
 
+.turismo{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .presentacion3{
     position:absolute;
     top: 1940px;
@@ -136,57 +151,28 @@ justify-content:center;
     margin: 50px;
 }
 
-/*ushuaia*/
-.header2 {
-    width: 99%;
-    height: 500px;
-    padding: 5px;
-    background-image: url(../img/header2.jpg);
-    background-size: cover;
-    margin: 1%;
-}
-
-.interes {
-    text-align: center;
-    font-size: larger;
-    margin: 100px;
-    background-color: cadetblue;
-}
-
-.tarjetas{
+/*promociones*/
+.cards{
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: stretch;
-    justify-content: space-evenly;
+    flex-direction: column;
 }
-    
-.add {
-    position: relative;
-}
-
-.add h4 {
-    position: absolute;
-    bottom: 0;
-    padding: 10 px;
-    text-align: center;
-    color: white;
-}
-
 
 /* contacto */ 
 .contactos1{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    margin: 50px;
 
 }
 .contactohijo {
     width: 600px;
     margin: 20px auto;
 }
+.maps{
+    margin-top:  70px;
 
+}
   /*footer*/
 footer{
     background-color: rgb(180, 174, 91);
