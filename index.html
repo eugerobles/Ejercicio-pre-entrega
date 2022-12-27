@@ -5,12 +5,13 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>HotelAsturias:Inicio</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
         <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     </head>
-    <header>
-      <h1 class="nombredelhotel">Hotel Asturias</h1>
+    <header class="header">
+      <img src="./assets/img/download.png" alt="">
+      <h1>Hotel Asturias</h1>
     </header>
     <body>
             <nav class="navbar navbar-expand-lg bg-light">
@@ -63,29 +64,24 @@
                   <span class="visually-hidden">Next</span>
                 </button>
               </div>
-              <div class="presentacion">
-                <h2>Asturias Hotel</h2>
-                <p class="parrafo">Hotel Asturis , confort y calidez en un entorno natural único en el mundo.
-
-                ¡Integrado a la belleza natural de la Patagonia!
-              
-                Hotel Asturias está situado en Ushuaia, en un radio de 500 metros del centro comercial, y ofrece alojamiento con bicicletas gratuitas y conexión WiFi gratuita en todas las instalaciones. Entre las diversas instalaciones hay un jardín y un salón compartido. El establecimiento ofrece una recepción abierta las 24 horas.</p>
-            </div>
+              <div class="ElHotel">
+                <h2>El Hotel</h2>
+                <p>Hotel Asturias , confort y calidez en un entorno natural único en el mundo.¡Integrado a la belleza natural de la Patagonia!
+                  Hotel Asturias está situado en Ushuaia, en un radio de 500 metros del centro comercial, y ofrece alojamiento con bicicletas gratuitas y conexión WiFi gratuita en todas las instalaciones. Entre las diversas instalaciones hay un jardín y un salón compartido. El establecimiento ofrece una recepción abierta las 24 horas.</p>
+              </div>
             </main>
-        
-         <aside>
+      <aside>
            <div class="reservaciones">
             <div class="d-grid gap-2">
                   <h3>Reservaciones</h3>
-                  <button class="btn btn-primary" type="button">Button</button>
+                  <button class="btn btn-primary" type="button">Reservar</button>
                 </div>
-            </div>
-            <hr>
+            </div>    
         <section class="tarjetas">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="tarjeta">
               <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
+                <i class="fa-solid fa-bed"></i>
                 <div class="card-body">
                   <h5 class="card-title">Habitaciones con confort y calides</h5>
                   <p class="card-text">Habitaciones con confort y calidez. Nuestras habitaciones se encuentran cuidadosamente decoradas hasta el último detalle, con el estilo de un establecimiento de 4 estrellas: Standard, Junior Suite y Penthouse.</p>
@@ -94,7 +90,7 @@
             </div>
             <div class="tarjeta">
               <div class="card h-100">
-                <img class="imagen icono" src="./assets/img/cocina icono.png" alt="">
+                <i class="fa-solid fa-kitchen-set"></i>
                 <div class="card-body">
                   <h5 class="card-title">Cocina gourmet</h5>
                   <p class="card-text">Déjese sorprender por nuestros chefs con los sabores más autóctonos en nuestro exclusivo restaurant gourmet. Un elaborado menú de delicias se complementa con una carta de vinos con las mejores bodegas argentinas..</p>
@@ -103,17 +99,49 @@
             </div>
             <div class="tarjeta">
               <div class="card h-100">
-                <img src="..." class="card-img-top" alt="...">
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
                 <div class="card-body">
-                  <h5 class="card-title">Unicación privilegiada</h5>
+                  <h5 class="card-title">Ubicación privilegiada</h5>
                   <p class="card-text">Asturias Hotel está especialmente concebido para disfrutar en familia de una temporada inolvidable en la misteriosa y mágica tierra del fin del mundo.</p>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="presentacion2">
-            <div class="modal-dialog modal-lg">...</div>
-
+            <div class="presentación2" mb-3>
+              <h3 class="text2">Comentarios de nuestros huespedes</h3>
+                <div class="card text-bg-light mb-3" style="max-width: 80rem;">
+                  <div class="card-header">Chile</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Carla Martinez</h5>
+                    <p class="card-text">La ubicación es muy buena y son muy atentos en la recepción con cualquier cosa que necesites.</p>
+                  </div>
+                </div>
+                <div class="card text-bg-light mb-3" style="max-width: 80rem;">
+                  <div class="card-header">UK</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Jhon </h5>
+                    <p class="card-text">Excelent place to stay with family or group of friends.</p>
+                  </div>
+                </div>
+                <div class="card text-bg-light mb-3" style="max-width: 80rem;">
+                  <div class="card-header">España</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Mari Marta</h5>
+                    <p class="card-text">HERMOSO HOTEL.. HERMOSA VISTA.. LUGAR INMEJORABLE.. ATENCION MUY CORDIAL</p>
+                  </div>
+                </div>
+                <div class="card text-bg-light mb-3" style="max-width: 80rem;">
+                  <div class="card-header">Argetina</div>
+                  <div class="card-body">
+                    <h5 class="card-title">Sebastían </h5>
+                    <p class="card-text">SMuy bueno en relación precio calidad. Buena la ubicación</p>
+                  </div>
+                </div>
+                <div>
+            <div class="presentacion3">
+              <h3>Te invitamos a conocer nuestra ciudad</h3>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/rbNm-Ks6Y2E" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+              <div>
+            </div>
           </div>
         </section>
          <footer class="footer">
