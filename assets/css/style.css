@@ -17,13 +17,8 @@ header h1{
     justify-content: center;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
-
-
 }
 
-.body{
-    background-color: rgb(250, 246, 246);
-}
 .subtitulo{
     display: flex;
     justify-content: center;
@@ -43,20 +38,8 @@ h1 {font-style: italic;
     text-align: center;
 
 }
-.carousel img {
-    height: 500px;
-    width: 100%;
-}
 
-.ElHotel{
-    margin: 200px;
-}
-.ElHotel h2{
-    display: flex;
-    justify-content: center;
-}
 .reservaciones{
-    margin-top: 200px;
    background-image:linear-gradient(0deg, orange, rgb(243, 214, 159))
 }
 .reservaciones h3 {
@@ -71,40 +54,20 @@ h1 {font-style: italic;
     margin:  30px;
     height: 10 px;
     border-color: white;
-    background-color: rgb(238, 160, 15);
-    
-}
-.card{
-    margin: 50px;
-    text-align: justify;
-}
-.card-title{
-    display: flex;
-    justify-content: center;
+    background-color: rgb(238, 160, 15);  
 }
 
-.turismo{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-.presentacion3{
-    position:absolute;
-    top: 1940px;
-    right: 50px;
-
-}
 .text2{
     margin:50px;
 }
-.tarjeta i{
-    margin: 15px;
-    width: 20px;
-    position: relative;
-    left: 150px
+.aside{
+    display: flex;
+    flex-direction: column;
 }
-
-
+.comentarios{
+    background-color:beige;
+}
+/*fin de inicio*/
 /*habitaciones*/
 
 .habitaciones{
@@ -158,14 +121,14 @@ justify-content:center;
 }
 
 /* contacto */ 
-.contactos1{
+.formularios{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     margin: 50px;
 
 }
-.contactohijo {
+.formulario {
     width: 600px;
     margin: 20px auto;
 }
@@ -176,26 +139,22 @@ justify-content:center;
   /*footer*/
 footer{
     background-color: rgb(180, 174, 91);
-    padding: 10px;
     color: white;
-    height: 250px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 250px
 }
 
-.newfooter{
+.newfooter h1 p{
     margin: 10px;
     border-radius: 5px;
     flex-direction: column;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    flex-direction: column;
 }
+
 footer.i{
     width: 10px;
 }
 
-.newfooter button {
+.newfooter3 button {
  background-color: white;
  margin-top: 5px;
  border: none;
@@ -207,4 +166,4 @@ footer.i{
     }
 }
 
-/*fin del fotter*/
+/*fin del footer*/
