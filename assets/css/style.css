@@ -3,9 +3,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-
+.nombreHotel{
+    color: #c19b76;
+    font-family: 'Times New Roman', Times, serif;
+    font-style:oblique;
+}
 header{
     display: flex;
     background-color: white;
@@ -18,7 +21,6 @@ header h1{
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: relative;
 }
-
 .subtitulo{
     display: flex;
     justify-content: center;
@@ -26,85 +28,122 @@ header h1{
     height: 60px;
 }
 .navbar{
-    background-image: linear-gradient(0deg, grey, white);
+    background-image: linear-gradient(0deg,#c19b76, white);
 }
 /*inicio*/
-
-h1 {font-style: italic;
+.nombreHotel {font-style: italic;
     font-weight: 200;
     margin: 10px;
     font-size: 45px;
     font-family: Georgia, 'Times New Roman', Times, serif;      
     text-align: center;
-
 }
-
-.reservaciones{
-   background-image:linear-gradient(0deg, orange, rgb(243, 214, 159))
+.bienvenidosCaja{
+    background-color: rgb(248, 245, 245)
 }
-.reservaciones h3 {
-    padding: 25px;
-    height: 50px;
+.subtituloInicial{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    font-weight:bold;
+}
+.tituloInicial{
+    font-family: 'Times New Roman', Times, serif;
+    font-size:40px;
+    font-weight:bold;
+}
+.textoInicial{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 16px;
+}
+.bienvenidoshijo2 img{
+    border-color: white;
+    border-width: 30px;
+    border-style:solid
+}
+.presentacionpadre img{
+    border-radius:300px;
+}
+.presentacionpadre h5{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 28px;
+    text-align: center;
+    justify-content: space-around;
+}
+.comentariossubtitulo{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+}
+.apartadoIndex{
+    background-image: url(../img/Les_Eclaireurs_Lighthouse.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
     display: flex;
     justify-content: center;
-    color: black;
+    align-items:center;
+}
+.apartadoIndex h3{
+    color:black;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: xx-large;
+    font-weight: bold;
 
-}
-.reservaciones button{
-    margin:  30px;
-    height: 10 px;
-    border-color: white;
-    background-color: rgb(238, 160, 15);  
-}
-
-.text2{
-    margin:50px;
-}
-.aside{
-    display: flex;
-    flex-direction: column;
-}
-.comentarios{
-    background-color:beige;
 }
 /*fin de inicio*/
 /*habitaciones*/
 
-.habitaciones{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    padding: 20px;
-    margin: 50px;
-}
-.habitacionletra {
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   font-size: larger;
-}
-
 .habitaciones img{
-    width: 285px;
-    height: 200px;
+    border-color: white;
+    border-width: 30px;
+    border-style:solid;
+    height: 400px;
+    width: 500px;
 }
-.card1{
-    margin: 8px;
-    width: 110px;
-
+.subtituloHabitaciones{
+    background-image: url(../img/cabecera.jpg);
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
-.card1 p{
-text-align: justify;
+.subtituloHabitaciones h5{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: xx-large;
 }
-.card1 a{
-background-color:lightseagreen;
-border: 5px;
-text-decoration: white;
-display: flex;
-justify-content:center;
-
+.subtituloHabitaciones h2{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-size:50px;
+    font-weight:800;
 }
-
-
+.subtituloHabitaciones p{
+    color: white;
+}
+.textParrafoHabitaciones{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 16px;
+}
+.habitaciones h3{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    font-size:30px;
+    font-weight:400;
+}
+.habitaciones button{
+    color: white;
+    background-color: #c19b76;
+    width: 90px;
+    height: 60px;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
 /*servicios*/
 .carousel-inner img{
    width: 100%;
@@ -140,7 +179,7 @@ justify-content:center;
 footer{
     background-color: rgb(180, 174, 91);
     color: white;
-    height: 250px
+    height: 300px;
 }
 
 .newfooter h1 p{
@@ -159,11 +198,4 @@ footer.i{
  margin-top: 5px;
  border: none;
  }
-
-@media(max-width:1223px){
-    footer > .sucursales {
-        width: 100%; 
-    }
-}
-
 /*fin del footer*/

@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body class="body">
+<body class="body container-fluid">
   <header>
     <img src="../assets/img/download.png">
-    <h1>Hotel Asturias<h1>
+    <h1 class="nombreHotel">Hotel Asturias<h1>
   </header>
         <nav class="navbar navbar-expand-lg bg-light">
           <div class="container-fluid">
@@ -43,37 +43,51 @@
         </nav>
      </header>
      <main>
-      <h2 class="subtitulo">HABITACIONES</h2>
-      <section class="habitaciones row flex-direction: column; align-items:center">
-        <div class="habitacion1 col-12 col-md-4">
-          <h3>Habitación Doble Estándar</h3>
+      <div class="subtituloHabitaciones">
+        <h5>Hotel Asturias</h5>
+        <h2>Habitaciones & Suites</h2>
+        <p>Nuestro Hotel cuenta con distintas habitaciones confortables para que su estadía sea única. Disponemos de diferentes opciones para su elección.</p>
+    </div>
+      <section class="habitaciones row flex-direction: column; align-items:center p-5 d-flex">
+        <div class="habitacion1 col-12 col-md-12 border shadow flex-wrap">
+          <div>
+            <h3>Habitación Doble Estándar</h3>
+            <p class="textParrafoHabitaciones">Esta habitación cuenta con 1 cama doble o 2 camas individuales, baño privado, caja fuerte, TV y conexión Wi-Fi gratis</p>
+            <button>Ver tarifas</button>
+          </div>
           <img class="img-fluid" src="../assets/img/habitacion solo.jpg" alt="">
-          <p>Esta habitación cuenta con 1 cama doble o 2 camas individuales, baño privado, caja fuerte, TV y conexión Wi-Fi gratis</p>
-          <button>Ver tarifas</button>
         </div>
-        <div class="habitacion2 col-12 col-md-4">
-          <h3>Habitación Doble Superior</h3>
-          <img class="img-fluid" src="../assets/img/cama doble.jpg" alt="">
-          <p>Esta habitación amplia presenta un diseño sobrio y cuenta con 1 cama extragrande o 2 camas grandes, mesa de comedor, TV por cable, caja fuerte, teléfono, conexión WiFi, frigobar y baño privado con bañera.</p>
-          <button>Ver tarifas</button>
+        <div class="habitacion2 col-12 col-md-12 d-flex border shadow flex-direction:column flex-nowrap">
+            <div>
+              <h3>Habitación Doble Superior</h3> 
+              <p class="textParrafoHabitaciones">Esta habitación amplia presenta un diseño sobrio y cuenta con 1 cama extragrande o 2 camas grandes, mesa de comedor, TV por cable, caja fuerte, teléfono, conexión WiFi, frigobar y baño privado con bañera.</p>
+              <button>Ver tarifas</button>
+          </div>
+            <img class="img-fluid" src="../assets/img/cama doble.jpg" alt="">
         </div>
-        <div class="habitacion3 col-12 col-md-4">
-          <h3>Habitación Triple Estandar</h3>
+        <div class="habitacion3 col-12 col-md-12 d-flex p-5 border shadow flex-direction:column flex-wrap">
+            <div>
+              <h3>Habitación Triple Estandar</h3>
+              <p class="textParrafoHabitaciones">La habitación tiene capacidad para 2 camas individuales más 1 sofá cama ó 1 cama doble más 1 sofá cama, baño privado, caja fuerte, TV y conexión Wi-Fi gratis.</p>
+              <button>Ver tarifas</button>
+          </div>
           <img class="img-fluid" src="../assets/img/camas triples.jpg" alt="">
-          <p>La habitación tiene capacidad para 2 camas individuales más 1 sofá cama ó 1 cama doble más 1 sofá cama, baño privado, caja fuerte, TV y conexión Wi-Fi gratis.</p>
-          <button>Ver tarifas</button>
         </div>
-        <div class="habitacion4 col-12 col-md-4">
-          <h3>Habitación Triple Superior</h3>
-          <img class="img-fluid" src="../assets/img/" alt="">
-          <p>Esta habitación amplia presenta un diseño sobrio, cuenta con 2 camas grandes, mesa de comedor, TV por cable, caja fuerte, teléfono, conexión WiFi gratuita y un baño privado con secador de pelo y bañera.</p>
-          <button>Ver tarifas</button>
+        <div class="habitacion4 col-12 col-md-12 d-flex p-5 border shadow flex-direction:column flex-wrap">
+            <div>
+              <h3>Habitación Triple Superior</h3>
+              <p class="textParrafoHabitaciones">Esta habitación amplia presenta un diseño sobrio, cuenta con 2 camas grandes, mesa de comedor, TV por cable, caja fuerte, teléfono, conexión WiFi gratuita y un baño privado con secador de pelo y bañera.</p>
+              <button>Ver tarifas</button>
+          </div>
+            <img class="img-fluid" src="../assets/img/habitacion triple.jpg" alt="">
         </div>
-        <div class="habitacion5 col-12 col-md-4">
-          <h3>Habitación Cuadruple Superior</h3>
+        <div class="habitacion5 col-12 col-md-12 d-flex p-5 border shadow flex-direction:column flex-wrap">
+            <div>
+              <h3>Habitación Cuadruple Superior</h3>
+              <p class="textParrafoHabitaciones">Emplia habitación tiene capacidad para 4 camas individuales o cama doble mas 2 camas individuales. Cuenta con caja de seguridad, TV por cable, conexión WiFi y baño privado con bañera</p>
+              <button>Ver tarifas</button>
+          </div>
           <img class="img-fluid" src="../assets/img/habitacion cuadruple.jpg" alt="">
-          <p>Emplia habitación tiene capacidad para 4 camas individuales o cama doble mas 2 camas individuales. Cuenta con caja de seguridad, TV por cable, conexión WiFi y baño privado con bañera</p>
-          <button>Ver tarifas</button>
         </div>
       </section>
     </main>
