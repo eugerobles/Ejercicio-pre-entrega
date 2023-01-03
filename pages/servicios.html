@@ -10,10 +10,10 @@
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
-<header>
-  <img src="../assets/img/download.png">
-  <h1 class="nombreHotel">Hotel Asturias<h1>
-  </header>
+    <header>
+      <img src="../assets/img/download.png">
+      <h1 class="nombreHotel">Hotel Asturias<h1>
+    </header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
           <a class="navbar-brand" href="../index.html">Inicio</a>
@@ -41,77 +41,59 @@
           </div>
         </div>
       </nav>
-</header>
-  <main>  
-        <h2 class="subtitulo">Servicios</h2>
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
-          <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="../assets/img/living hotel.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>First slide label</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/desayunohotel.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Desayunos</h5>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="../assets/img/hotel living 2.jpg" class="d-block w-100" alt="...">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Nuestro zona de estar</h5>
-              </div>
-            </div>
-          </div>
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
+    </header>
+    <main>  
+        <div class="serviciosCabecera col-12 col-md-12 m-3">
+            <h5>Hotel Asturias</h5>
+            <h2>Sevicios</h2>
         </div>
-        <div>
-          <img src="" alt="">
-          <h3>Piscina Climatizada</h3>
-          <h4>(cubierta)</h4>
-          <h5>El Hotel cuenta con una piscina climatizada todo el año, ideal para relajarse luego de un día en la montaña.</h5>
-          <button>Reservar</button>
+        <div  class="serviciosCajaPadre col-12 col-md-6 d-flex m-5 justify-content-between">
+          <div class="servicioscajahijo1">
+            <h2>Nuestros servicios</h2>
+            <h3>Le ofrecemos un ambiente íntimo y confortable, con una atención cordial y personalizada durante todo el año</h3>
+              <ul>
+                <li>Servicio Médico de Emergencias</li>
+                <li>Caja de Seguridad</li> 
+                <li> 45 habitaciones alfombradas</li>
+                <li> Calefacción</li>
+                <li> Cocheras cubiertas </li>
+                <li>  Servicio de lavandería </li>
+                <li> Desayunador </li> 
+                <li> Snack Bar </li>
+                <li> Restaurant </li> 
+                <li> Ubicación Céntrica </li> 
+                <li> A 300 mts. del Centro Comercial </li>
+                <li> Música ambiental</li> 
+              </ul>
+          </div>
         </div>
-    
-
-
+        <div class="serviciosCajaimg flex-row m-5; justify-content-center">
+          <img class="imgservicios1 col-11 col-md-3 m-5" src="../assets/img/cama doble.jpg" alt="">
+          <img class="imgservicios2 col-11 col-md-3 m-5" src="../assets/img/camas triples.jpg" alt="">
+          <img class="imgservicios3 col-11 col-md-3 m-5" src="../assets/img/desayunohotel.jpg" alt="">
+        </div>
     </main>
-  </section>
-  <footer class="footer">
-     <div class="newfooter">
-       <h5 class="subtitulodelfotter">Segui a Hotel Asturias en nuestras redes sociales</h5>
-       <i class="fa-brands fa-facebook"></i>
-       <i class="fa-brands fa-instagram"></i>
-       <i class="fa-brands fa-whatsapp"></i>
-       <i class="fa-brands fa-youtube"></i>
-     </div>
-     <div class="newfooter">
-       <i class="fa-solid fa-location-dot"></i>
-       <p> Gdor. Ernesto Manuel Campos 1250, Ushuaia, Tierra del Fuego.</p>
-       Tel: +2901456782
-     </div>
-     <div class="newfooter">
-       <h5>Newsletter</h5>
-       <p>Reciba las últimas novedades de Hotel Asturias</p>
-       <input type="text" class="form-control" placeholder="Ingrese su correo" aria-label="Recipient's username" aria-describedby="button-addon2">
-       <button class="btn btn-outline-secondary" type="Enviar" id="button-addon2">Enviar</button>
-     </div>
- </footer>
- <section>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
-</body>
+    <footer class="footer row align-items-center p-2">
+        <div class="newfooter1 col-11 col-md-4">
+            <h5 class="subtitulodelfotter">Segui a Hotel Asturias en nuestras redes sociales</h5>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-instagram"></i>
+              <i class="fa-brands fa-whatsapp"></i>
+              <i class="fa-brands fa-youtube"></i>
+        </div>
+        <div class="newfooter2 col-11 col-md-4">
+            <i class="fa-solid fa-location-dot"></i>
+            <p> Gdor. Ernesto Manuel Campos 1250, Ushuaia, Tierra del Fuego.</p>
+            Tel: +2901456782
+        </div>
+        <div class="newfooter3 col-11 col-md-4">
+            <h5>Newsletter</h5>
+            <p>Reciba las últimas novedades de Hotel Asturias</p>
+            <input type="text" class="form-control" placeholder="Ingrese su correo" aria-label="Recipient's username" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary" type="Enviar" id="button-addon2">Enviar</button>
+        </div>
+    </footer>
+    <section>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+  </body>
 </html>

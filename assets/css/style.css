@@ -31,6 +31,9 @@ header h1{
     background-image: linear-gradient(0deg,#c19b76, white);
 }
 /*inicio*/
+.carousel-inner img{
+    width: 99%;
+}
 .nombreHotel {font-style: italic;
     font-weight: 200;
     margin: 10px;
@@ -61,8 +64,24 @@ header h1{
     border-width: 30px;
     border-style:solid
 }
+.imgbienvenidos:hover{
+    transform: rotateX(400deg);
+}
+.presentacionhijo1:hover{
+    transform: translate(20px,20px)
+}
+.presentacionhijo2:hover{
+    transform: translate(20px,20px)
+}
+.presentacionhijo3:hover{
+    transform: translate(20px,20px)
+}
 .presentacionpadre img{
-    border-radius:300px;
+   height: 200px;
+   width: 500px;
+   border:20px;
+   border-color: #c19b76;
+   border-style: solid;
 }
 .presentacionpadre h5{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -95,17 +114,18 @@ header h1{
 /*habitaciones*/
 
 .habitaciones img{
-    border-color: white;
-    border-width: 30px;
-    border-style:solid;
-    height: 400px;
-    width: 500px;
+    height: 300px;
+    width: 400px;
+    margin: 15px;
 }
+.imgHab:hover{
+   transform: translate(20px,20px)
+    }
 .subtituloHabitaciones{
     background-image: url(../img/cabecera.jpg);
     width: 100%;
     height: 600px;
-    background-size: cover;
+    background-size:cover;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,20 +164,91 @@ header h1{
     border: none;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 /*servicios*/
-.carousel-inner img{
-   width: 100%;
-   height: 600px;}
-
-.desayunodescripcion {
-    margin: 50px;
-}
-
-/*promociones*/
-.cards{
+.serviciosCabecera{
+    background-image: url(../img/hotel\ living\ 2.jpg);
+    width: 100%;
+    height: 600px;
+    background-size:cover;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items:center;
 }
+.serviciosCabecera h2{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-size:50px;
+    font-weight:800;
+}
+.serviciosCabecera h5{
+    color: white;
+}
+.servicioscajahijo1 h3{
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.servicioscajahijo1 ul li{
+    color: grey;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.servicioscajahijo1 h2{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    font-size:30px;
+    font-weight:400;
+}
+.serviciosCabecera img{
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+}
+
+
+/*findeservicios*/
+/*promociones*/
+.subtituloPromociones{
+    background-image: url(../img/servicios\ foto\ noche.jpg);
+    width: 100%;
+    height: 600px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+
+.subtituloPromociones{
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-size:50px;
+    font-weight:800;
+}
+.promociones h3{
+    color: white;
+}
+.promociones p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: grey;
+    font-size: 16px;
+}
+.promociones h3{
+    font-family:'Times New Roman', Times, serif;
+    color: black;
+    font-size:30px;
+    font-weight:400;
+}
+.promociones button{
+    color: white;
+    background-color: #c19b76;
+    width: 90px;
+    height: 60px;
+    border: none;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+
 
 /* contacto */ 
 .formularios{
@@ -176,26 +267,26 @@ header h1{
 
 }
   /*footer*/
-footer{
+.footer{
     background-color: rgb(180, 174, 91);
     color: white;
-    height: 300px;
+    height: 350px;
 }
-
 .newfooter h1 p{
     margin: 10px;
     border-radius: 5px;
     flex-direction: column;
     font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
-
-footer.i{
+.newfooter3{
+    background-color: rgb(180, 174, 91);
+}
+.footer.i{
     width: 10px;
 }
-
 .newfooter3 button {
- background-color: white;
- margin-top: 5px;
- border: none;
+    background-color: white;
+    margin-top: 5px;
+    border: none;
  }
 /*fin del footer*/
