@@ -1,292 +1,460 @@
+@charset "UTF-8";
+/* Hoja de Style*/ /*hojavariables*/
+/*fin de hoja de variables*/
+/*en style poner el boton padre
+%button{
+    padding:10px;
+    etct etc}
+    luego en la hoja de estilo poner 
+    .button{
+        @extend %button{.....}*/
+.PromocionesCabecera, .serviciosCabecera, .HabitacionesCabecera {
+  width: 98%;
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.serviciosCabecera {
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.promocion3 > p, .promocion2 > p, .promocion1 > p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: grey;
+  font-size: 16px;
+}
+.promocion3 > p > h3, .promocion2 > p > h3, .promocion1 > p > h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 400;
+}
+.promocion3 > p > h3 > button, .promocion2 > p > h3 > button, .promocion1 > p > h3 > button {
+  color: white;
+  background-color: #c19b76;
+  width: 90px;
+  height: 60px;
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.presentacionhijo3 > img, .presentacionhijo2 > img, .presentacionhijo1 > img {
+  height: 200px;
+  width: 400px;
+  border-radius: 70px;
+}
+
+.presentacionhijo3 > h5, .presentacionhijo2 > h5, .presentacionhijo1 > h5 {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 28px;
+  color: #c19b76;
+  text-align: center;
+  justify-content: space-around;
+}
+
+.habitacion5, .habitacion4, .habitacion3, .habitacion2, .habitacion1 {
+  background-color: #f8f5f5 "Times New Roman", Times, serif;
+}
+.habitacion5 > h4, .habitacion4 > h4, .habitacion3 > h4, .habitacion2 > h4, .habitacion1 > h4 {
+  color: #40bcd8;
+  font-family: "Times New Roman", Times, serif;
+}
+.habitacion5 > h3, .habitacion4 > h3, .habitacion3 > h3, .habitacion2 > h3, .habitacion1 > h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #123c69;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.habitacion5, .habitacion4, .habitacion3, .habitacion2, .habitacion1 {
+  background-color: #f8f5f5 "Times New Roman", Times, serif;
+}
+.habitacion5 > h4, .habitacion4 > h4, .habitacion3 > h4, .habitacion2 > h4, .habitacion1 > h4 {
+  color: #40bcd8;
+  font-family: "Times New Roman", Times, serif;
+}
+.habitacion5 > h3, .habitacion4 > h3, .habitacion3 > h3, .habitacion2 > h3, .habitacion1 > h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #123c69;
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.promocion3, .promocion2, .promocion1 {
+  background-color: #f8f5f5 "Times New Roman", Times, serif;
+}
+.promocion3 > h4, .promocion2 > h4, .promocion1 > h4 {
+  color: #40bcd8;
+  font-family: "Times New Roman", Times, serif;
+}
+.promocion3 > h5, .promocion2 > h5, .promocion1 > h5 {
+  font-family: "Times New Roman", Times, serif;
+  color: #123c69;
+  font-size: 20px;
+  font-weight: 20px;
+}
+
+.serviciosCajaPadre {
+  background-color: #f8f5f5 "Times New Roman", Times, serif;
+}
+.serviciosCajaPadre h2 {
+  color: #40bcd8;
+  font-family: "Times New Roman", Times, serif;
+}
+.serviciosCajaPadre h3 {
+  font-family: "Times New Roman", Times, serif;
+  color: #123c69;
+  font-size: 20px;
+  font-weight: 20px;
+}
+
+/*Hoja de Navegador*/
+.navbar {
+  background-image: linear-gradient(0deg, #c19b76, white);
+}
+
+/*Fin Hoja de Navegador*/
+/*Hoja de Footer*/
+.footer {
+  background-color: rgb(180, 174, 91);
+  color: white;
+  height: 350px;
+}
+.footer > .i {
+  width: 10px;
+}
+.footer > .i .newfooter h1 p {
+  margin: 10px;
+  border-radius: 5px;
+  flex-direction: column;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+.footer > .i .newfooter h1 p > .newfooter3 {
+  background-color: rgb(180, 174, 91);
+}
+.footer > .i .newfooter h1 p > .newfooter3 > .button {
+  background-color: white;
+  margin-top: 5px;
+  border: none;
+}
+
+/*Fin de Hoja de Footer*/
 /*para todas la paginas*/
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-.nombreHotel{
-    color: #c19b76;
-    font-family: 'Times New Roman', Times, serif;
-    font-style:oblique;
-}
-header{
-    display: flex;
-    background-color: white;
-}
-header img{
-    height: 70px;
-}
-header h1{
-    justify-content: center;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    position: relative;
-}
-.subtitulo{
-    display: flex;
-    justify-content: center;
-    background-color:rgb(219, 230, 240);
-    height: 60px;
-}
-.navbar{
-    background-image: linear-gradient(0deg,#c19b76, white);
-}
-/*inicio*/
-.carousel-inner img{
-    width: 99%;
-}
-.nombreHotel {font-style: italic;
-    font-weight: 200;
-    margin: 10px;
-    font-size: 45px;
-    font-family: Georgia, 'Times New Roman', Times, serif;      
-    text-align: center;
-}
-.bienvenidosCaja{
-    background-color: rgb(248, 245, 245)
-}
-.subtituloInicial{
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 17px;
-    font-weight:bold;
-}
-.tituloInicial{
-    font-family: 'Times New Roman', Times, serif;
-    font-size:40px;
-    font-weight:bold;
-}
-.textoInicial{
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-    font-size: 16px;
-}
-.bienvenidoshijo2 img{
-    border-color: white;
-    border-width: 30px;
-    border-style:solid
-}
-.imgbienvenidos:hover{
-    transform: rotateX(400deg);
-}
-.presentacionhijo1:hover{
-    transform: translate(20px,20px)
-}
-.presentacionhijo2:hover{
-    transform: translate(20px,20px)
-}
-.presentacionhijo3:hover{
-    transform: translate(20px,20px)
-}
-.presentacionpadre img{
-   height: 200px;
-   width: 500px;
-   border:20px;
-   border-color: #c19b76;
-   border-style: solid;
-}
-.presentacionpadre h5{
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 28px;
-    text-align: center;
-    justify-content: space-around;
-}
-.comentariossubtitulo{
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 30px;
-}
-.apartadoIndex{
-    background-image: url(../img/Les_Eclaireurs_Lighthouse.jpg);
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-}
-.apartadoIndex h3{
-    color:black;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: xx-large;
-    font-weight: bold;
-
-}
-/*fin de inicio*/
-/*habitaciones*/
-
-.habitaciones img{
-    height: 300px;
-    width: 400px;
-    margin: 15px;
-}
-.imgHab:hover{
-   transform: translate(20px,20px)
-    }
-.subtituloHabitaciones{
-    background-image: url(../img/cabecera.jpg);
-    width: 100%;
-    height: 600px;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}
-.subtituloHabitaciones h5{
-    font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    font-size: xx-large;
-}
-.subtituloHabitaciones h2{
-    font-family:'Times New Roman', Times, serif;
-    color: white;
-    font-size:50px;
-    font-weight:800;
-}
-.subtituloHabitaciones p{
-    color: white;
-}
-.textParrafoHabitaciones{
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-    font-size: 16px;
-}
-.habitaciones h3{
-    font-family:'Times New Roman', Times, serif;
-    color: black;
-    font-size:30px;
-    font-weight:400;
-}
-.habitaciones button{
-    color: white;
-    background-color: #c19b76;
-    width: 90px;
-    height: 60px;
-    border: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-/*servicios*/
-.serviciosCabecera{
-    background-image: url(../img/hotel\ living\ 2.jpg);
-    width: 100%;
-    height: 600px;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
-}
-.serviciosCabecera h2{
-    font-family:'Times New Roman', Times, serif;
-    color: white;
-    font-size:50px;
-    font-weight:800;
-}
-.serviciosCabecera h5{
-    color: white;
-}
-.servicioscajahijo1 h3{
-    color: black;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-.servicioscajahijo1 ul li{
-    color: grey;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
-}
-.servicioscajahijo1 h2{
-    font-family:'Times New Roman', Times, serif;
-    color: black;
-    font-size:30px;
-    font-weight:400;
-}
-.serviciosCabecera img{
-    height: 300px;
-    width: 300px;
-    margin: 15px;
+/*hoja inicio*/
+.nombreHotel {
+  color: #c19b76;
+  font-family: "Times New Roman", Times, serif;
+  font-style: oblique;
 }
 
-
-/*findeservicios*/
-/*promociones*/
-.subtituloPromociones{
-    background-image: url(../img/servicios\ foto\ noche.jpg);
-    width: 100%;
-    height: 600px;
-    background-size:cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items:center;
+header {
+  display: flex;
+  background-color: white;
+}
+header > img {
+  height: 70px;
+}
+header > img > h1 {
+  justify-content: center;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
 }
 
-.subtituloPromociones{
-    font-family:'Times New Roman', Times, serif;
-    color: white;
-    font-size:50px;
-    font-weight:800;
+.carousel-inner img {
+  width: 110%;
 }
-.promociones h3{
-    color: white;
-}
-.promociones p{
-    font-family: Arial, Helvetica, sans-serif;
-    color: grey;
-    font-size: 16px;
-}
-.promociones h3{
-    font-family:'Times New Roman', Times, serif;
-    color: black;
-    font-size:30px;
-    font-weight:400;
-}
-.promociones button{
-    color: white;
-    background-color: #c19b76;
-    width: 90px;
-    height: 60px;
-    border: none;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
 
-
-/* contacto */ 
-.formularios{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 50px;
-
+.bienvenidosCaja {
+  background-color: rgb(248, 245, 245);
 }
+
+.subtituloInicial {
+  font-family: Arial, Helvetica, sans-serif; /*ver fuente*/
+  font-size: 17px;
+  font-weight: bold;
+  color: rgb(0, 140, 255);
+}
+
+.tituloInicial {
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+.textoInicial {
+  color: #727272;
+  justify-content: center;
+}
+
+.bienvenidoshijo2 > img {
+  border-color: white;
+  border-width: 30px;
+  border-style: solid;
+}
+.bienvenidoshijo2 > imghover {
+  transform: rotateX(400deg);
+}
+
+.presentacionhijo1:hover {
+  transform: translate(20px, 20px);
+}
+
+.presentacionhijo2:hover {
+  transform: translate(20px, 20px);
+}
+
+.presentacionhijo3:hover {
+  transform: translate(20px, 20px);
+}
+
+/*foto del Faro*/
+.apartadoIndex {
+  background-image: url(../img/Les_Eclaireurs_Lighthouse.jpg);
+  width: 100%;
+  height: 600px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.apartadoIndex > h3 {
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+  font-size: xx-large;
+  font-weight: bold;
+}
+
+.comentariossubtitulo { /*comentarios de clientes*/
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+/*Fin de inicio*/
+/*Inicio de Habitaciones*/
+.HabitacionesCabecera {
+  background-image: url(../img/cabecera.jpg); /*cabecera tiene la misma tarjeta ver!!!*/
+}
+.HabitacionesCabecera h5 {
+  color: white;
+  font-size: 30px;
+}
+.HabitacionesCabecera h2 {
+  color: white;
+  font-size: 50px;
+}
+
+.presentacionHabitaciones {
+  margin-top: 150px;
+  margin-bottom: 100px;
+  padding: 100px;
+}
+.presentacionHabitaciones > h3 {
+  color: #123c69;
+  font-size: 40.2px;
+}
+.presentacionHabitaciones > h4 {
+  color: #40bcd8;
+}
+.presentacionHabitaciones > p {
+  color: #333333;
+  font-size: 18px;
+  margin-top: 100px;
+  align-items: center;
+}
+
+/*tarjetas de las habitaciones*/
+.habitacion1 > img {
+  border: 40px;
+}
+.habitacion1 button {
+  background-color: #c19b76;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+  width: 140px;
+  font-size: 18px;
+  justify-items: end;
+  letter-spacing: 0 0.8em;
+}
+.habitacion1 button :hover {
+  transition-background-color: black;
+}
+
+.habitacion2 button {
+  background-color: #c19b76;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+  width: 140px;
+  font-size: 18px;
+  justify-items: end;
+  letter-spacing: 0 0.8em;
+}
+.habitacion2 button :hover {
+  transition-background-color: black;
+}
+
+.habitacion3 button {
+  background-color: #c19b76;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+  width: 140px;
+  font-size: 18px;
+  justify-items: end;
+  letter-spacing: 0 0.8em;
+  margin: 8px;
+}
+.habitacion3 button :hover {
+  transition-background-color: black;
+}
+
+.habitacion4 button {
+  background-color: #c19b76;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+  width: 140px;
+  font-size: 18px;
+  justify-items: end;
+  letter-spacing: 0 0.8em;
+}
+.habitacion4 button :hover {
+  transition-background-color: black;
+}
+
+.habitacion5 button {
+  background-color: #c19b76;
+  color: white;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 75px;
+  width: 140px;
+  font-size: 18px;
+  justify-items: end;
+  letter-spacing: 0 0.8em;
+}
+.habitacion5 button :hover {
+  transition-background-color: black;
+}
+
+.button {
+  background-color: #c19b76;
+}
+
+/*página de Servicios*/
+.serviciosCabecera {
+  background-image: url(../img/hotel\ living\ 2.jpg);
+}
+
+/*Fin de Servicios*/
+/*Promociones*/
+.PromocionesCabecera {
+  background-image: url(../img/servicios\ foto\ noche.jpg);
+}
+.PromocionesCabecera > h2 {
+  align-items: center; /*ver fuente*/
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+.PromocionesCabecera > h2 h3 {
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.promocion1 {
+  padding: 20px;
+}
+.promocion1 img {
+  width: 250px;
+  height: 200px;
+  align-content: center;
+  margin: 30px;
+}
+.promocion1 button {
+  color: white;
+  background-color: #c19b76;
+  width: 90px;
+  height: 60px;
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.promocion2 {
+  padding: 20px;
+}
+.promocion2 img {
+  width: 250px;
+  height: 200px;
+  align-content: center;
+  margin: 30px;
+}
+.promocion2 ul {
+  color: #333333;
+}
+.promocion2 button {
+  color: white;
+  background-color: #c19b76;
+  width: 90px;
+  height: 60px;
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.promocion3 {
+  padding: 20px;
+  padding: 20px;
+}
+.promocion3 img {
+  width: 250px;
+  height: 200px;
+  align-content: center;
+  margin: 30px;
+}
+.promocion3 button {
+  color: white;
+  background-color: #c19b76;
+  width: 90px;
+  height: 60px;
+  border: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+/*Fin de Promociones*/
+/*Contacto*/
+.formularios {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 50px;
+}
+
 .formulario {
-    width: 600px;
-    margin: 20px auto;
+  width: 600px;
+  margin: 20px auto;
 }
-.maps{
-    margin-top:  70px;
 
+.maps {
+  margin-top: 70px;
 }
-  /*footer*/
-.footer{
-    background-color: rgb(180, 174, 91);
-    color: white;
-    height: 350px;
-}
-.newfooter h1 p{
-    margin: 10px;
-    border-radius: 5px;
-    flex-direction: column;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.newfooter3{
-    background-color: rgb(180, 174, 91);
-}
-.footer.i{
-    width: 10px;
-}
-.newfooter3 button {
-    background-color: white;
-    margin-top: 5px;
-    border: none;
- }
-/*fin del footer*/

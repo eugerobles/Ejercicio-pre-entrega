@@ -1,0 +1,129 @@
+/*en style poner el boton padre
+%button{
+    padding:10px;
+    etct etc}
+    luego en la hoja de estilo poner 
+    .button{
+        @extend %button{.....}*/
+%TarjetaCabecera{
+        width: 100%;
+        height: 500px;
+        background-size:cover;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:center;
+        h2     {
+            align-items:center; /*ver fuente*/
+            font-family:'Times New Roman', Times, serif;
+            color: white;
+            font-size:50px;
+            font-weight:800;
+        h3    {    
+            align-items:center;
+            font-family:'Times New Roman', Times, serif;
+            color: white;
+            font-size:50px;
+            font-weight:800;
+ 
+         }
+    }
+}
+%SubtituloPortada{
+      font-family:'Times New Roman', Times, serif;
+      color: white;
+      font-size:50px;
+      font-weight:800;
+}
+%TarjetaPromociones{
+            >p{
+                font-family: Arial, Helvetica, sans-serif;
+                color: grey;
+                font-size: 16px;
+            >h3{
+                font-family:'Times New Roman', Times, serif;
+                color: black;
+                font-size:30px;
+                font-weight:400;
+            >button{
+                color: white;
+                background-color: #c19b76;
+                width: 90px;
+                height: 60px;
+                border: none;
+                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                            }
+                        }
+                 }
+                }
+%TituloCabecera{
+        align-items:center; /*ver fuente*/
+        font-family:'Times New Roman', Times, serif;
+        font-size:50px;
+        font-weight:800;
+        
+                  }
+%TarjetaPresentacion{
+        height: 200px;
+        width: 400px;
+        border-radius: 70px;
+}
+%TarjetaPresentacionTitulo{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        font-size: 28px;
+        color: $ColorPrincipal;
+        text-align: center;
+        justify-content: space-around;
+}
+%TarjetaHabitaciones{
+    background-color: $ColorTarjetaFondo;
+     >h4{
+        color: $ColorSubtitulos;
+        font-family: 'Times New Roman', Times, serif;
+     }
+     >h3 {
+       font-family: "Times New Roman", Times, serif;
+       color: $ColorTitulos;
+       font-size: 30px;
+       font-weight: 400;
+        }
+     }
+ %TarjetaHabitaciones{
+    background-color: $ColorTarjetaFondo;
+     >h4{
+        color: $ColorSubtitulos;
+        font-family: 'Times New Roman', Times, serif;
+     }
+     >h3 {
+       font-family: "Times New Roman", Times, serif;
+       color: $ColorTitulos;
+       font-size: 30px;
+       font-weight: 400;
+        }
+     }
+ %TarjetaPromociones{
+        background-color: $ColorTarjetaFondo;
+         >h4{
+            color: $ColorSubtitulos;
+            font-family: 'Times New Roman', Times, serif;
+         }
+         >h5{
+           font-family: "Times New Roman", Times, serif;
+           color: $ColorTitulos;
+           font-size: 20px;
+           font-weight: 20px;
+            }
+         }
+%TarjetaServicios{
+            background-color: $ColorTarjetaFondo;
+             h2{
+                color: $ColorSubtitulos;
+                font-family: 'Times New Roman', Times, serif;
+             }
+             h3{
+               font-family: "Times New Roman", Times, serif;
+               color: $ColorTitulos;
+               font-size: 20px;
+               font-weight: 20px;
+                }
+             }
