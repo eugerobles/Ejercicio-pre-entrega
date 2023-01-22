@@ -1,25 +1,31 @@
 @charset "UTF-8";
 /* Hoja de Style*/ /*hojavariables*/
 /*fin de hoja de variables*/
-/*en style poner el boton padre
-%button{
-    padding:10px;
-    etct etc}
-    luego en la hoja de estilo poner 
-    .button{
-        @extend %button{.....}*/
-.PromocionesCabecera, .serviciosCabecera, .HabitacionesCabecera {
-  width: 98%;
-  height: 500px;
+.presentacionContactoImg, .ServiciosCabecera, .HabitacionesCabecera, .InicioCabecera {
+  height: 400px;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.serviciosCabecera {
-  font-family: "Times New Roman", Times, serif;
+.presentacionContactoImg h2, .ServiciosCabecera h2, .HabitacionesCabecera h2, .InicioCabecera h2 {
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+.presentacionContactoImg h2 h3, .ServiciosCabecera h2 h3, .HabitacionesCabecera h2 h3, .InicioCabecera h2 h3 {
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
+  font-size: 50px;
+  font-weight: 800;
+}
+.presentacionContactoImg h2 h3 h5, .ServiciosCabecera h2 h3 h5, .HabitacionesCabecera h2 h3 h5, .InicioCabecera h2 h3 h5 {
+  align-items: center;
+  font-family: "Roboto Condensed", sans-serif;
   color: white;
   font-size: 50px;
   font-weight: 800;
@@ -30,13 +36,13 @@
   color: grey;
   font-size: 16px;
 }
-.promocion3 > p > h3, .promocion2 > p > h3, .promocion1 > p > h3 {
+.promocion3 > p h3, .promocion2 > p h3, .promocion1 > p h3 {
   font-family: "Times New Roman", Times, serif;
   color: black;
   font-size: 30px;
   font-weight: 400;
 }
-.promocion3 > p > h3 > button, .promocion2 > p > h3 > button, .promocion1 > p > h3 > button {
+.promocion3 > p h3 button, .promocion2 > p h3 button, .promocion1 > p h3 button {
   color: white;
   background-color: #c19b76;
   width: 90px;
@@ -46,21 +52,23 @@
 }
 
 .presentacionhijo3 > img, .presentacionhijo2 > img, .presentacionhijo1 > img {
-  height: 200px;
-  width: 400px;
-  border-radius: 70px;
+  height: 300px;
+  width: 300px;
+  border-radius: 800px;
 }
 
 .presentacionhijo3 > h5, .presentacionhijo2 > h5, .presentacionhijo1 > h5 {
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
-  font-size: 28px;
-  color: #c19b76;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 30px;
+  color: white;
   text-align: center;
   justify-content: space-around;
+  padding-right: 70px;
+  margin: 10px;
 }
 
 .habitacion5, .habitacion4, .habitacion3, .habitacion2, .habitacion1 {
-  background-color: #f8f5f5 "Times New Roman", Times, serif;
+  background-color: #f8f5f5;
 }
 .habitacion5 > h4, .habitacion4 > h4, .habitacion3 > h4, .habitacion2 > h4, .habitacion1 > h4 {
   color: #40bcd8;
@@ -74,7 +82,7 @@
 }
 
 .habitacion5, .habitacion4, .habitacion3, .habitacion2, .habitacion1 {
-  background-color: #f8f5f5 "Times New Roman", Times, serif;
+  background-color: #f8f5f5;
 }
 .habitacion5 > h4, .habitacion4 > h4, .habitacion3 > h4, .habitacion2 > h4, .habitacion1 > h4 {
   color: #40bcd8;
@@ -88,7 +96,7 @@
 }
 
 .promocion3, .promocion2, .promocion1 {
-  background-color: #f8f5f5 "Times New Roman", Times, serif;
+  background-color: #f8f5f5;
 }
 .promocion3 > h4, .promocion2 > h4, .promocion1 > h4 {
   color: #40bcd8;
@@ -101,29 +109,24 @@
   font-weight: 20px;
 }
 
-.serviciosCajaPadre {
-  background-color: #f8f5f5 "Times New Roman", Times, serif;
-}
-.serviciosCajaPadre h2 {
-  color: #40bcd8;
-  font-family: "Times New Roman", Times, serif;
-}
-.serviciosCajaPadre h3 {
-  font-family: "Times New Roman", Times, serif;
-  color: #123c69;
-  font-size: 20px;
-  font-weight: 20px;
+.comentario4 h5, .comentario3 h5, .comentario2 h5, .comentario1 h5 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
 }
 
 /*Hoja de Navegador*/
 .navbar {
-  background-image: linear-gradient(0deg, #c19b76, white);
+  height: 100px;
+  font-family: "Roboto Condensed", sans-serif;
+  color: white;
 }
 
 /*Fin Hoja de Navegador*/
 /*Hoja de Footer*/
 .footer {
-  background-color: rgb(180, 174, 91);
+  background-color: black;
   color: white;
   height: 350px;
 }
@@ -136,13 +139,20 @@
   flex-direction: column;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
 }
-.footer > .i .newfooter h1 p > .newfooter3 {
-  background-color: rgb(180, 174, 91);
+.footer .iconosfooter {
+  color: white;
+  text-decoration: none;
 }
-.footer > .i .newfooter h1 p > .newfooter3 > .button {
+.footer .newfooter3 {
+  background-color: black;
+  margin-top: 50px;
+}
+.footer .newfooter3 > button {
   background-color: white;
-  margin-top: 5px;
+  margin: 30px;
   border: none;
+  margin-left: 0px;
+  color: black;
 }
 
 /*Fin de Hoja de Footer*/
@@ -154,18 +164,29 @@
 }
 
 /*hoja inicio*/
+.ColorCabeza {
+  background-color: black;
+  height: 20px;
+  width: fit-content;
+}
+
 .nombreHotel {
-  color: #c19b76;
-  font-family: "Times New Roman", Times, serif;
+  color: black;
+  font-family: "Roboto Condensed", sans-serif;
   font-style: oblique;
+}
+
+.RedesSociales {
+  color: black;
 }
 
 header {
   display: flex;
-  background-color: white;
+  background-color: black;
+  height: 80px;
 }
 header > img {
-  height: 70px;
+  height: 100px;
 }
 header > img > h1 {
   justify-content: center;
@@ -173,19 +194,19 @@ header > img > h1 {
   position: relative;
 }
 
-.carousel-inner img {
-  width: 110%;
+.InicioCabecera {
+  background-image: url(../img/imagen\ inicio\ cabecera.jpg);
 }
 
-.bienvenidosCaja {
-  background-color: rgb(248, 245, 245);
+.bienvenidoshijo1 {
+  margin-top: 50px;
 }
-
-.subtituloInicial {
-  font-family: Arial, Helvetica, sans-serif; /*ver fuente*/
-  font-size: 17px;
+.bienvenidoshijo1 h6 {
+  font-family: "Roboto Condensed", sans-serif;
+  justify-content: center;
+  font-size: 35px;
   font-weight: bold;
-  color: rgb(0, 140, 255);
+  color: #123c69;
 }
 
 .tituloInicial {
@@ -195,15 +216,21 @@ header > img > h1 {
 .textoInicial {
   color: #727272;
   justify-content: center;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .bienvenidoshijo2 > img {
-  border-color: white;
+  border-color: black;
   border-width: 30px;
   border-style: solid;
 }
 .bienvenidoshijo2 > imghover {
   transform: rotateX(400deg);
+}
+
+.presentacionpadre {
+  background-color: black;
+  width: auto;
 }
 
 .presentacionhijo1:hover {
@@ -228,31 +255,41 @@ header > img > h1 {
   justify-content: center;
   align-items: center;
 }
-.apartadoIndex > h3 {
-  color: white;
-  font-family: "Times New Roman", Times, serif;
+.apartadoIndex h3 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
   font-weight: bold;
+  right: 20px;
 }
 
-.comentariossubtitulo { /*comentarios de clientes*/
-  text-align: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
+/*sección comentarios de huéspedes*/
+.comentario1 {
+  background-color: rgb(247, 247, 247);
+  border: dotted 0.5px black;
 }
-
+.comentario2 {
+  background-color: rgb(247, 247, 247);
+  border: solid 0.5px black;
+}
+.comentario3 {
+  background-color: rgb(247, 247, 247);
+  border: solid 0.5px black;
+}
+.comentario4 {
+  background-color: rgb(247, 247, 247);
+  border: solid 0.5px black;
+}
 /*Fin de inicio*/
 /*Inicio de Habitaciones*/
 .HabitacionesCabecera {
-  background-image: url(../img/cabecera.jpg); /*cabecera tiene la misma tarjeta ver!!!*/
+  background-image: url(../img/cabecera.jpg);
 }
 .HabitacionesCabecera h5 {
-  color: white;
-  font-size: 30px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 .HabitacionesCabecera h2 {
-  color: white;
-  font-size: 50px;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .presentacionHabitaciones {
@@ -260,14 +297,14 @@ header > img > h1 {
   margin-bottom: 100px;
   padding: 100px;
 }
-.presentacionHabitaciones > h3 {
+.presentacionHabitaciones h3 {
   color: #123c69;
   font-size: 40.2px;
 }
-.presentacionHabitaciones > h4 {
+.presentacionHabitaciones h4 {
   color: #40bcd8;
 }
-.presentacionHabitaciones > p {
+.presentacionHabitaciones p {
   color: #333333;
   font-size: 18px;
   margin-top: 100px;
@@ -289,8 +326,9 @@ header > img > h1 {
   justify-items: end;
   letter-spacing: 0 0.8em;
 }
-.habitacion1 button :hover {
-  transition-background-color: black;
+
+.habitacion1 button:hover {
+  background-color: black;
 }
 
 .habitacion2 button {
@@ -304,8 +342,9 @@ header > img > h1 {
   justify-items: end;
   letter-spacing: 0 0.8em;
 }
-.habitacion2 button :hover {
-  transition-background-color: black;
+
+.habitacion2 button:hover {
+  background-color: black;
 }
 
 .habitacion3 button {
@@ -320,8 +359,9 @@ header > img > h1 {
   letter-spacing: 0 0.8em;
   margin: 8px;
 }
-.habitacion3 button :hover {
-  transition-background-color: black;
+
+.habitacion3 button:hover {
+  background-color: black;
 }
 
 .habitacion4 button {
@@ -334,9 +374,11 @@ header > img > h1 {
   font-size: 18px;
   justify-items: end;
   letter-spacing: 0 0.8em;
+  margin: 8px;
 }
-.habitacion4 button :hover {
-  transition-background-color: black;
+
+.habitacion4 button:hover {
+  background-color: black;
 }
 
 .habitacion5 button {
@@ -349,48 +391,66 @@ header > img > h1 {
   font-size: 18px;
   justify-items: end;
   letter-spacing: 0 0.8em;
-}
-.habitacion5 button :hover {
-  transition-background-color: black;
+  margin: 8px;
 }
 
-.button {
-  background-color: #c19b76;
+.habitacion5 button:hover {
+  background-color: black;
 }
 
 /*página de Servicios*/
-.serviciosCabecera {
-  background-image: url(../img/hotel\ living\ 2.jpg);
+.ServiciosCabecera {
+  background-image: url(../img/header1.jpg);
+}
+
+.serviciosCaja {
+  margin: auto;
+  padding: 50px;
+}
+.serviciosCaja h2 {
+  color: #123c69;
+  font-size: 40.2px;
+  margin: 20px;
+  text-align: center;
+}
+.serviciosCaja h3 {
+  color: black;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+}
+
+.presentacionservicios {
+  width: auto;
+  background-color: #123c69;
+  border: dotted;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.serviciosCajaimg2 {
+  justify-content: end;
+}
+.serviciosCajaimg2 img {
+  margin: 10px;
 }
 
 /*Fin de Servicios*/
 /*Promociones*/
-.PromocionesCabecera {
-  background-image: url(../img/servicios\ foto\ noche.jpg);
-}
-.PromocionesCabecera > h2 {
-  align-items: center; /*ver fuente*/
-  font-family: "Times New Roman", Times, serif;
-  color: white;
-  font-size: 50px;
-  font-weight: 800;
-}
-.PromocionesCabecera > h2 h3 {
+.TitulosPromociones h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
   align-items: center;
-  font-family: "Times New Roman", Times, serif;
-  color: white;
-  font-size: 50px;
-  font-weight: 800;
+  margin: 60px;
+  font-weight: bold;
 }
 
-.promocion1 {
-  padding: 20px;
-}
 .promocion1 img {
   width: 250px;
   height: 200px;
-  align-content: center;
-  margin: 30px;
+  align-items: center;
+  margin: 60px;
 }
 .promocion1 button {
   color: white;
@@ -401,11 +461,8 @@ header > img > h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.promocion2 {
-  padding: 20px;
-}
 .promocion2 img {
-  width: 250px;
+  width: 200px;
   height: 200px;
   align-content: center;
   margin: 30px;
@@ -424,7 +481,6 @@ header > img > h1 {
 
 .promocion3 {
   padding: 20px;
-  padding: 20px;
 }
 .promocion3 img {
   width: 250px;
@@ -442,17 +498,36 @@ header > img > h1 {
 }
 
 /*Fin de Promociones*/
-/*Contacto*/
-.formularios {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 50px;
+/*Inicio página Contacto*/
+.presentacionContactoImg {
+  background-image: url(../img/servicios.jpg);
+}
+
+.presentacionContacto {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 50px;
+}
+.presentacionContacto h2 {
+  color: #123c69;
+  font-size: 40.2px;
+}
+.presentacionContacto p {
+  color: black;
+  font-size: 20px;
+}
+
+.TituloContacto {
+  width: 600px;
+  align-items: center;
+  color: #c19b76;
+  font-size: 32px;
 }
 
 .formulario {
-  width: 600px;
-  margin: 20px auto;
+  width: 50%;
+  align-items: center;
+  justify-content: center;
 }
 
 .maps {

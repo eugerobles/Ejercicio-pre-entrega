@@ -5,16 +5,25 @@
     box-sizing: border-box;
 }
 /*hoja inicio*/
+.ColorCabeza{
+    background-color: black;
+    height: 20px;
+    width: fit-content;
+} 
 .nombreHotel{
-      color: $ColorPrincipal;
-      font-family: 'Times New Roman', Times, serif;
+      color: black;
+      font-family: $FonText;
       font-style:oblique;
   }
+.RedesSociales {
+    color: black;
+}
 header{
       display: flex;
-      background-color: white;
+      background-color: black;
+      height: 80px;
       >img{
-          height: 70px;
+          height: 100px;
       >h1{
           justify-content: center;
           font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -22,39 +31,42 @@ header{
       }
       }
   }
-.carousel-inner img{
-    width: 110%;
+.InicioCabecera{
+ background-image:url(../img/imagen\ inicio\ cabecera.jpg);
+ @extend %TarjetaCabecera;
 }
-.bienvenidosCaja{
-    background-color: rgb(248, 245, 245);
-}
-.subtituloInicial{
-            font-family:Arial, Helvetica, sans-serif; /*ver fuente*/
-            font-size: 17px;
+
+.bienvenidoshijo1{
+    margin-top: 50px;
+        h6{
+            font-family: 'Roboto Condensed', sans-serif;
+            justify-content: center;
+            font-size: 35px;
             font-weight:bold;
-            color: rgb(0, 140, 255);
-
-        }
-
-.tituloInicial{
-        font-family: Georgia, 'Times New Roman', Times, serif;
-       
+            color: $ColorTitulos;
     }
-
+}
+.tituloInicial{
+        font-family: Georgia, 'Times New Roman', Times, serif;  
+    }
 .textoInicial{
     color: $ColortextCuerpo;
     justify-content:center;
+    font-family: $FonText;
 }
-
 .bienvenidoshijo2 {
     >img{
-        border-color: white;
+        border-color: black;
         border-width: 30px;
         border-style:solid;
     &hover{
         transform: rotateX(400deg);
     }
 }
+}
+.presentacionpadre{
+    background-color: black;
+    width: auto;
 }
   
 .presentacionhijo1{
@@ -68,7 +80,6 @@ header{
         transform: translate(20px,20px);
     }
 }
-
 .presentacionhijo2{
     >img{
         @extend %TarjetaPresentacion;
@@ -80,7 +91,6 @@ header{
         transform: translate(20px,20px);
     }
 }
-
 .presentacionhijo3{
     >img{
         @extend %TarjetaPresentacion;
@@ -92,7 +102,6 @@ header{
         transform: translate(20px,20px);
     }
 }
-
 /*foto del Faro*/
 .apartadoIndex{
     background-image: url(../img/Les_Eclaireurs_Lighthouse.jpg);
@@ -102,56 +111,73 @@ header{
     display: flex;
     justify-content: center;
     align-items:center;
-    >h4{
-        color:white;
-        font-family: 'Times New Roman', Times, serif;
+        h3{
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
         font-size: xx-large;
         font-weight: bold;
+        right: 20px;
     }
 }
+/*sección comentarios de huéspedes*/
 
-.comentariossubtitulo{ /*comentarios de clientes*/
-    text-align: center;
-    font-family: 'Times New Roman', Times, serif;
-    color:$ColorTitulos;
- 
+.comentario1{
+    background-color: rgb(247, 247, 247);
+    border:dotted 0.5px black;
+        h5{
+            @extend %SubtituloComentarios;
+        }
 }
-
+.comentario2{
+    background-color: rgb(247, 247, 247);
+    border:solid 0.5px black;
+        h5{
+            @extend %SubtituloComentarios;
+        }
+}
+.comentario3{
+    background-color: rgb(247, 247, 247);
+    border:solid 0.5px black;
+        h5{
+            @extend %SubtituloComentarios;
+        }
+}
+.comentario4{
+    background-color: rgb(247, 247, 247);
+    border:solid 0.5px black;
+        h5{
+            @extend %SubtituloComentarios;
+        }
+}
 /*Fin de inicio*/
 /*Inicio de Habitaciones*/
 .HabitacionesCabecera{
-    background-image: url(../img/cabecera.jpg);/*cabecera tiene la misma tarjeta ver!!!*/
+    background-image: url(../img/cabecera.jpg);
     @extend %TarjetaCabecera;
-    h5{
-        color: white;
-        font-size: 30px;
-        
-    }
-    h2{
-        color: white;
-        font-size: 50px;
-    }
- 
+        h5{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+        h2{
+            font-family: 'Roboto Condensed', sans-serif;
+        }
 }
-
 .presentacionHabitaciones{
     margin-top: 150px;
     margin-bottom: 100px;
     padding: 100px;
-    >h3 {
+    h3 {
         color: $ColorTitulos;
         font-size: 40.2px;
     }
-    >h4{ color: $ColorSubtitulos;     
+    h4{ color: $ColorSubtitulos;     
     }
-    >p{
+    p{
         color: #333333;
         font-size: 18px;
         margin-top: 100px;
         align-items: center;
     }
 }
-
  /*tarjetas de las habitaciones*/
 .habitacion1{ 
     @extend %TarjetaHabitaciones;
@@ -168,14 +194,14 @@ header{
             font-size: 18px;
             justify-items: end;
             letter-spacing: .0.8em;
-            & :hover {
-                transition: {background-color: black;}
-                
-            }
 
+            }
+                
         }
-        }
-    
+.habitacion1 button:hover{
+    background-color: black;
+}
+
 
 .habitacion2{
     @extend %TarjetaHabitaciones;
@@ -189,14 +215,12 @@ header{
         font-size: 18px;
         justify-items: end;
         letter-spacing: .0.8em;
-        & :hover {
-            transition: {background-color: black;}
-            
-        }
-
     }
-
 }
+.habitacion2 button:hover{
+    background-color: black;
+}
+
 .habitacion3{ 
     @extend %TarjetaHabitaciones;
     button{
@@ -210,49 +234,103 @@ header{
         justify-items: end;
         letter-spacing: .0.8em;
         margin: 8px;
-        & :hover {
-            transition: {background-color: black;}
-            
-        }
     }
 }
-.habitacion4{ 
-    @extend %TarjetaHabitaciones;
-    
-.habitacion5{
-    @extend  %TarjetaHabitaciones;
-   
-        }
-    }
-           
-/*página de Servicios*/
-.serviciosCabecera{
-    background-image: url(../img/hotel\ living\ 2.jpg);
-    @extend %TarjetaCabecera;
-    @extend %SubtituloPortada;
-    }
-.serviciosCajaPadre{
-    @extend   %TarjetaServicios;
+.habitacion3 button:hover{
+    background-color: black;
 }
 
+.habitacion4{ 
+    @extend %TarjetaHabitaciones;
+    button{
+        background-color: $ColorPrincipal;
+        color: white;
+        border: none;
+        font-family:Arial, Helvetica, sans-serif;
+        height: 75px;
+        width: 140px;
+        font-size: 18px;
+        justify-items: end;
+        letter-spacing: .0.8em;
+        margin: 8px;
+    }
+}
+.habitacion4 button:hover{
+    background-color: black;
+}
+
+.habitacion5{
+    @extend  %TarjetaHabitaciones;
+    button{
+        background-color: $ColorPrincipal;
+        color: white;
+        border: none;
+        font-family:Arial, Helvetica, sans-serif;
+        height: 75px;
+        width: 140px;
+        font-size: 18px;
+        justify-items: end;
+        letter-spacing: .0.8em;
+        margin: 8px;
+    }
+}
+.habitacion5 button:hover{
+    background-color: black;
+}
+
+              
+/*página de Servicios*/
+.ServiciosCabecera{
+    background-image: url(../img/header1.jpg);
+    @extend %TarjetaCabecera;
+}
+   
+.serviciosCaja{
+    margin:auto;
+    padding: 50px;
+    h2{
+        color: $ColorTitulos;
+        font-size: 40.2px;
+        margin: 20px;
+        text-align: center;
+    }
+    h3{ color: black;
+        font-size: 20px;  
+        margin: 10px;
+        text-align: center;
+    }
+}
+.presentacionservicios{
+    width: auto;
+    background-color: $ColorTitulos;
+    border:dotted;
+        color: white;
+        font-weight:bold;
+        font-size: 18px;
+        }
+.serviciosCajaimg2 {
+    img{margin: 10px;}
+    justify-content: end;
+    
+}
 /*Fin de Servicios*/
 /*Promociones*/
-.PromocionesCabecera{
-    background-image: url(../img/servicios\ foto\ noche.jpg);
-    @extend %TarjetaCabecera; 
-        img{
-            width: 99%;
-        }
-   }
+.TitulosPromociones{
+    h3{ font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        align-items:center;
+        margin: 60px;
+        font-weight: bold;}
+   
+}
 .promocion1{
     img{
         width: 250px;
         height: 200px;
-        align-content: center;
-        margin: 30px;
+        align-items: center;
+        margin: 60px;
     }
     @extend %TarjetaPromociones;
-    padding: 20px;
       button{
            color: white;
            background-color: #c19b76;
@@ -263,9 +341,8 @@ header{
                        }
                    }
 .promocion2{
-    padding: 20px;
     img{
-        width: 250px;
+        width: 200px;
         height: 200px;
         align-content: center;
         margin: 30px;
@@ -284,7 +361,6 @@ header{
                        }
                    }
 .promocion3{
-    padding: 20px;
     img{
         width: 250px;
         height: 200px;
@@ -303,18 +379,35 @@ header{
                        }
                    }    
 /*Fin de Promociones*/    
-/*Contacto*/
-.formularios{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 50px;
+/*Inicio página Contacto*/
+.presentacionContactoImg{
+    background-image: url(../img/servicios.jpg);
+    @extend %TarjetaCabecera;
 }
-.FormularioSubtitulo{
+.presentacionContacto{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 50px;
+    h2{
+        color: $ColorTitulos;
+        font-size: 40.2px;
+    }
+    p{ color: black;
+        font-size: 20px;  
+    }
+}
+
+.TituloContacto{
     width: 600px;
-    margin: 20px auto;
     align-items: center;
-    color: blue;
+    color: $ColorPrincipal;
+    font-size: 32px;
+}
+.formulario{
+
+    width: 50%;
+    align-items:center;
+    justify-content: center;
 }
 .maps{
     margin-top:  70px;

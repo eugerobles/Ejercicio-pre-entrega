@@ -6,15 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Servicios de nuestro Hotel Asturias">
     <title>HotelAsturias:Servicios</title>
-    <!-- Página Maquetada con Bootstrap-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300&family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
-<body>
+<body class="container-fluid">
     <header>
       <img src="../assets/img/download.png">
-      <h1 class="nombreHotel">Hotel Asturias<h1> <!-- agregar fs para el tamaño de fuente-->
+      <h1 class="nombreHotel">Hotel Asturias Servicios<h1> 
     </header>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
@@ -43,15 +45,14 @@
           </div>
         </div>
       </nav>
-    <main>  
-        <div class="serviciosCabecera col-12 col-md-12 m-3">
-            <h5>Hotel Asturias</h5>
-            <h2>Sevicios</h2>
+    <main class="serviciosmain col-12 col-md-12">  
+        <div class="ServiciosCabecera col-12 col-md-12">
         </div>
-        <div  class="serviciosCajaPadre col-12 col-md-6 d-flex m-5 justify-content-between shadow p-5">
-          <div class="servicioscajahijo1">
-            <h2>Nuestros servicios</h2>
+        <div class="serviciosCaja col-11 col-md-10 p-3 m-2 p-2"> 
+            <h2>Nuestros servicios</h2> 
             <h3>Le ofrecemos un ambiente íntimo y confortable, con una atención cordial y personalizada durante todo el año</h3>
+          </div>
+            <div class="presentacionservicios col-12 col-xl-8 shadow p-3 m-2 d-flex flex-wrap">
               <ul>
                 <li>Servicio Médico de Emergencias</li>
                 <li>Caja de Seguridad</li> 
@@ -66,28 +67,32 @@
                 <li> A 300 mts. del Centro Comercial </li>
                 <li> Música ambiental</li> 
               </ul>
-          </div>
-        </div>
-        <div class="serviciosCajaimg flex-row m-5; justify-content-center">
-          <img class="imgservicios1 col-11 col-md-3 m-5" src="../assets/img/cama doble.jpg" alt="">
-          <img class="imgservicios2 col-11 col-md-3 m-5" src="../assets/img/camas triples.jpg" alt="">
-          <img class="imgservicios3 col-11 col-md-3 m-5" src="../assets/img/habitacion triple.jpg" alt="">
+              <div class="serviciosCajaimg2 col-12 col-xl-8 d-flex flex-column img-fluid, align-items-end">
+                <img src="../assets/src/img/servicios 2.png" alt="Hotel Servicios">
+                <img src="../assets/src/img/servicios 3.png" alt="Hotel desayunos">
+              </div>
+            </div>
+        <div class="serviciosCajaimg flex-row m-3; justify-content-center"> 
+          <h4>GALERIA</h4>
+          <img class="imgservicios1 col-10 col-md-3 m-5" src="../assets/img/cama doble.jpg" alt=" cama doble">
+          <img class="imgservicios2 col-10 col-md-3 m-5" src="../assets/img/camas triples.jpg" alt="camas triples">
+          <img class="imgservicios3 col-10 col-md-3 m-5" src="../assets/img/habitacion triple.jpg" alt=" habitación triple">
         </div>
     </main>
     <footer class="footer row align-items-center p-2">
-        <div class="newfooter1 col-11 col-md-4">
+        <div class="newfooter1 col-10 col-md-4">
             <h5 class="subtitulodelfotter">Segui a Hotel Asturias en nuestras redes sociales</h5>
               <i class="fa-brands fa-facebook"></i>
               <i class="fa-brands fa-instagram"></i>
               <i class="fa-brands fa-whatsapp"></i>
               <i class="fa-brands fa-youtube"></i>
         </div>
-        <div class="newfooter2 col-11 col-md-4">
+        <div class="newfooter2 col-10 col-md-4">
             <i class="fa-solid fa-location-dot"></i>
             <p> Gdor. Ernesto Manuel Campos 1250, Ushuaia, Tierra del Fuego.</p>
             Tel: +2901456782
         </div>
-        <div class="newfooter3 col-11 col-md-4">
+        <div class="newfooter3 col-10 col-md-4">
             <h5>Newsletter</h5>
             <p>Reciba las últimas novedades de Hotel Asturias</p>
             <input type="text" class="form-control" placeholder="Ingrese su correo" aria-label="Recipient's username" aria-describedby="button-addon2">
