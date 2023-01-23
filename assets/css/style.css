@@ -70,22 +70,19 @@
 .habitacion5, .habitacion4, .habitacion3, .habitacion2, .habitacion1 {
   background-color: #f8f5f5;
 }
-.habitacion5 > h4, .habitacion4 > h4, .habitacion3 > h4, .habitacion2 > h4, .habitacion1 > h4 {
-  color: #40bcd8;
-  font-family: "Times New Roman", Times, serif;
-}
-.habitacion5 > h3, .habitacion4 > h3, .habitacion3 > h3, .habitacion2 > h3, .habitacion1 > h3 {
-  font-family: "Times New Roman", Times, serif;
+.habitacion5 h3, .habitacion4 h3, .habitacion3 h3, .habitacion2 h3, .habitacion1 h3 {
+  font-family: "Roboto Condensed", sans-serif;
   color: #123c69;
   font-size: 30px;
-  font-weight: 400;
+  font-weight: bold;
+  margin: 20px;
 }
 
 .habitacion5, .habitacion4, .habitacion3, .habitacion2, .habitacion1 {
   background-color: #f8f5f5;
 }
 .habitacion5 > h4, .habitacion4 > h4, .habitacion3 > h4, .habitacion2 > h4, .habitacion1 > h4 {
-  color: #40bcd8;
+  color: #3bafc9;
   font-family: "Times New Roman", Times, serif;
 }
 .habitacion5 > h3, .habitacion4 > h3, .habitacion3 > h3, .habitacion2 > h3, .habitacion1 > h3 {
@@ -99,7 +96,7 @@
   background-color: #f8f5f5;
 }
 .promocion3 > h4, .promocion2 > h4, .promocion1 > h4 {
-  color: #40bcd8;
+  color: #3bafc9;
   font-family: "Times New Roman", Times, serif;
 }
 .promocion3 > h5, .promocion2 > h5, .promocion1 > h5 {
@@ -117,10 +114,10 @@
 }
 
 /*Hoja de Navegador*/
-.navbar {
-  height: 100px;
+.div container-fluid {
+  color: blue;
   font-family: "Roboto Condensed", sans-serif;
-  color: white;
+  color: #c19b76;
 }
 
 /*Fin Hoja de Navegador*/
@@ -197,6 +194,9 @@ header > img > h1 {
 .InicioCabecera {
   background-image: url(../img/imagen\ inicio\ cabecera.jpg);
 }
+.InicioCabecera h5 {
+  color: white;
+}
 
 .bienvenidoshijo1 {
   margin-top: 50px;
@@ -257,13 +257,25 @@ header > img > h1 {
 }
 .apartadoIndex h3 {
   color: black;
+  font-size: 40px;
   font-family: Arial, Helvetica, sans-serif;
   font-size: xx-large;
   font-weight: bold;
   right: 20px;
 }
+.apartadoIndex h3 h4 {
+  color: white;
+}
 
 /*sección comentarios de huéspedes*/
+.comentarios h4 {
+  font-family: "Roboto Condensed", sans-serif;
+  text-align: center;
+  color: #3bafc9;
+  font-weight: bold;
+  font-size: 40px;
+}
+
 .comentario1 {
   background-color: rgb(247, 247, 247);
   border: dotted 0.5px black;
@@ -302,7 +314,7 @@ header > img > h1 {
   font-size: 40.2px;
 }
 .presentacionHabitaciones h4 {
-  color: #40bcd8;
+  color: #3bafc9;
 }
 .presentacionHabitaciones p {
   color: #333333;
@@ -347,7 +359,7 @@ header > img > h1 {
   background-color: black;
 }
 
-.habitacion3 button {
+button {
   background-color: #c19b76;
   color: white;
   border: none;
@@ -408,7 +420,7 @@ header > img > h1 {
   padding: 50px;
 }
 .serviciosCaja h2 {
-  color: #123c69;
+  color: #1e5ea1;
   font-size: 40.2px;
   margin: 20px;
   text-align: center;
@@ -422,11 +434,20 @@ header > img > h1 {
 
 .presentacionservicios {
   width: auto;
-  background-color: #123c69;
-  border: dotted;
+  background-color: #1c5fa7;
   color: white;
   font-weight: bold;
   font-size: 18px;
+}
+.presentacionservicios li {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+.serviciosCajaimg h4 {
+  color: #3bafc9;
+  text-align: center;
+  margin: 50px;
+  font-size: 40px;
 }
 
 .serviciosCajaimg2 {
@@ -439,11 +460,10 @@ header > img > h1 {
 /*Fin de Servicios*/
 /*Promociones*/
 .TitulosPromociones h3 {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 30px;
-  align-items: center;
-  margin: 60px;
-  font-weight: bold;
+  color: #3bafc9;
+  text-align: center;
+  margin: 50px;
+  font-size: 4;
 }
 
 .promocion1 img {
@@ -459,6 +479,10 @@ header > img > h1 {
   height: 60px;
   border: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.promocion1 button:hover {
+  background-color: black;
 }
 
 .promocion2 img {
@@ -479,6 +503,10 @@ header > img > h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
+.promocion2 button:hover {
+  background-color: black;
+}
+
 .promocion3 {
   padding: 20px;
 }
@@ -495,6 +523,10 @@ header > img > h1 {
   height: 60px;
   border: none;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+.promocion3 button:hover {
+  background-color: black;
 }
 
 /*Fin de Promociones*/
@@ -524,12 +556,15 @@ header > img > h1 {
   font-size: 32px;
 }
 
-.formulario {
-  width: 50%;
-  align-items: center;
-  justify-content: center;
+.FormularioPadre {
+  padding: 20px;
+  background-color: #f3d1b0;
+  width: fit-content;
+  justify-items: center;
 }
 
 .maps {
   margin-top: 70px;
+  width: auto;
+  height: 400px;
 }

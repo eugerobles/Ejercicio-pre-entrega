@@ -80,15 +80,12 @@
 }
 %TarjetaHabitaciones{
     background-color: $ColorTarjetaFondo;
-     >h4{
-        color: $ColorSubtitulos;
-        font-family: 'Times New Roman', Times, serif;
-     }
-     >h3 {
-       font-family: "Times New Roman", Times, serif;
+    h3 {
+       font-family: $FonText;
        color: $ColorTitulos;
        font-size: 30px;
-       font-weight: 400;
+       font-weight:bold;
+       margin: 20px;
         }
      }
  %TarjetaHabitaciones{
