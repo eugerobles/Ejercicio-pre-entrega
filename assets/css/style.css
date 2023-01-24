@@ -71,7 +71,7 @@
   background-color: #f8f5f5;
 }
 .habitacion5 h3, .habitacion4 h3, .habitacion3 h3, .habitacion2 h3, .habitacion1 h3 {
-  font-family: "Roboto Condensed", sans-serif;
+  font-family: "Times New Roman", Times, serif;
   color: #123c69;
   font-size: 30px;
   font-weight: bold;
@@ -114,7 +114,7 @@
 }
 
 /*Hoja de Navegador*/
-.div container-fluid {
+.nabvar a {
   color: blue;
   font-family: "Roboto Condensed", sans-serif;
   color: #c19b76;
@@ -126,25 +126,29 @@
   background-color: black;
   color: white;
   height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
-.footer > .i {
-  width: 10px;
-}
-.footer > .i .newfooter h1 p {
-  margin: 10px;
-  border-radius: 5px;
-  flex-direction: column;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-}
-.footer .iconosfooter {
+
+.newfooter1 a {
   color: white;
   text-decoration: none;
+  width: 50px;
+  height: 30xp;
 }
-.footer .newfooter3 {
+
+.newfooter2 {
+  margin-top: 5px;
+  align-content: center;
+}
+
+.newfooter3 {
   background-color: black;
-  margin-top: 50px;
+  align-items: center;
+  width: fit-content;
 }
-.footer .newfooter3 > button {
+.newfooter3 > button {
   background-color: white;
   margin: 30px;
   border: none;
@@ -278,19 +282,15 @@ header > img > h1 {
 
 .comentario1 {
   background-color: rgb(247, 247, 247);
-  border: dotted 0.5px black;
 }
 .comentario2 {
   background-color: rgb(247, 247, 247);
-  border: solid 0.5px black;
 }
 .comentario3 {
   background-color: rgb(247, 247, 247);
-  border: solid 0.5px black;
 }
 .comentario4 {
   background-color: rgb(247, 247, 247);
-  border: solid 0.5px black;
 }
 /*Fin de inicio*/
 /*Inicio de Habitaciones*/
@@ -467,10 +467,7 @@ button {
 }
 
 .promocion1 img {
-  width: 250px;
-  height: 200px;
-  align-items: center;
-  margin: 60px;
+  margin: 10px;
 }
 .promocion1 button {
   color: white;
@@ -514,7 +511,6 @@ button {
   width: 250px;
   height: 200px;
   align-content: center;
-  margin: 30px;
 }
 .promocion3 button {
   color: white;
@@ -552,19 +548,32 @@ button {
 .TituloContacto {
   width: 600px;
   align-items: center;
-  color: #c19b76;
+  color: white;
   font-size: 32px;
 }
 
 .FormularioPadre {
-  padding: 20px;
-  background-color: #f3d1b0;
+  background-color: #a097c2;
   width: fit-content;
   justify-items: center;
 }
+.FormularioPadre label {
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+}
 
 .maps {
-  margin-top: 70px;
-  width: auto;
-  height: 400px;
+  margin: 20px;
+}
+.maps h2 {
+  color: #1c5fa7;
+}
+.maps h3 {
+  color: #333333;
+  font-size: 20px;
+  margin: 10px;
+}
+.maps img {
+  width: 500px;
 }

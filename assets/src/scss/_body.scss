@@ -138,28 +138,24 @@ header{
 }
 .comentario1{
     background-color: rgb(247, 247, 247);
-    border:dotted 0.5px black;
         h5{
             @extend %SubtituloComentarios;
         }
 }
 .comentario2{
     background-color: rgb(247, 247, 247);
-    border:solid 0.5px black;
         h5{
             @extend %SubtituloComentarios;
         }
 }
 .comentario3{
     background-color: rgb(247, 247, 247);
-    border:solid 0.5px black;
         h5{
             @extend %SubtituloComentarios;
         }
 }
 .comentario4{
     background-color: rgb(247, 247, 247);
-    border:solid 0.5px black;
         h5{
             @extend %SubtituloComentarios;
         }
@@ -352,12 +348,9 @@ header{
     }
 }
 .promocion1{
-    img{
-        width: 250px;
-        height: 200px;
-        align-items: center;
-        margin: 60px;
-    }
+   img{
+    margin: 10px;
+   }
     @extend %TarjetaPromociones;
       button{
            color: white;
@@ -399,7 +392,6 @@ header{
         width: 250px;
         height: 200px;
         align-content: center;
-        margin: 30px;
     }
     @extend %TarjetaPromociones;
     padding: 20px;
@@ -437,18 +429,30 @@ header{
 .TituloContacto{
     width: 600px;
     align-items: center;
-    color: $ColorPrincipal;
+    color: white;
     font-size: 32px;
 }
 .FormularioPadre{
-    padding: 20px;
-    background-color: #f3d1b0;
+    background-color: #a097c2;
     width:fit-content;
     justify-items: center;
+        label{
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
 }
-.maps{
-    margin-top:  70px;
-    width: auto;
-    height: 400px;
 
+.maps{
+    margin: 20px;
+    h2{ color: #1c5fa7;
+    }
+    h3{
+        color: #333333;
+        font-size: 20px;
+        margin: 10px;
+    }
+    img{
+        width: 500px;
+    }
 }
